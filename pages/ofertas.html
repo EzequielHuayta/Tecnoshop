@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styleProductos.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.jpg">
+    <title>TecnoShop</title>
+</head>
+<body>
+<!--HEADER-->
+<div>
+    <header>
+        <div class="header-top">
+            <div class="header-logo"> 
+            <a href="/pages/index.html" > 
+                <h1>
+                    <img src="../assets/images/logo.jpg"> TECNOSHOP
+                </h1>  
+            </a>
+            </div>
+                <input type="search" placeholder="Search..." aria-label="Search" class="header-search">
+            <div class = header-images  >
+                <div class = "header-images">
+                    <a href="/pages/login.html"><img src="../assets/images/icons/user-icon.jpg"></a>
+                </div>
+                <div class = "header-images">
+                    <a href="/pages/cart.html"><img src="../assets/images/icons/shoppingcart-icon.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li ><a href="ofertas.html" style="color: rgb(255, 217, 0) !important;"> OFERTAS!</a></li>
+                    <li><a href="productos.html" >Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>   
+            </nav>
+        </div>
+
+    </header>
+</div>
+<!--MAIN-->
+<!--MAIN-->
+<main class="ofertas">
+    <div class="containerProducts">
+        <div class="containerFilter">
+            <h3>Filtros</h3>
+            <div style="padding: 10px 0; ">
+                <h4>Orden</h4>
+            </div>
+            <select name="motivo" id="motivos">
+                <option value="relevantes">Relevantes</option>
+                <option value="menor">Menor precio</option>
+                <option value="mayor">Mayor precio</option>
+            </select> 
+            <div class="categories" >
+            <h4>Categorias</h4>
+            <h5>Perifericos</h5>
+                <label><input type="checkbox" id="cbox1"> Auriculares (99)</label>
+                <label><input type="checkbox" id="cbox2"> Mouse (99)</label>
+                <label><input type="checkbox" id="cbox3"> Teclados (99)</label>
+                <label><input type="checkbox" id="cbox4"> Mousepads (99)</label>
+            <h5>Marcas</h5>
+            <label><input type="checkbox" id="cbox1"> Logitech</label>
+            <label><input type="checkbox" id="cbox2"> Intel</label>
+            <label><input type="checkbox" id="cbox3"> Steelseries</label>
+            </div>
+        </div>
+        <ol class="items">
+            <li class="product">
+                <div class="img">
+                <a href="#"> <img src="../assets/images/products/k1-usb.jpg" alt="products-1"> </a>
+                </div>
+                <div class="text">
+                    <div class="titleProduct">
+                        <a href="#">
+                        <h2>Teclado Gigabyte Aorus K1 USB</h2>
+                        </a>
+                    </div>
+                    <div class="descriptionProduct">
+                        <h2>!missing content!</h2>
+                    </div>
+                </div>
+                <div class="price">
+                    <del>$11000</del> <p>$10000</p>
+                    <button class="button cart"></button>
+                    <button class="button">Mas info </button>
+                </div>
+            </li>
+            <li class="product">
+                <div class="img">
+                <a href="#"> <img src="../assets/images/products/m-audio-m40-auriculares-profesionales.jpg" alt="products-2"> </a>
+                </div>
+                <div class="text">
+                    <div class="titleProduct">
+                        <a href="#">
+                    <h2>Auriculares profesionales estudio M40</h2>
+                        </a>
+                    </div>
+                    <div class="descriptionProduct">
+                        <h2>Siendo el Tope de linea de la Gama intel, el i9 10900, tiene un rendimiento nunca antes visto, con un consumo energetico Increible.</h2>
+                    </div>
+                </div>
+                <div class="price">
+                <del>$13000</del> <p>$11000</p>
+                <button class="button cart"></button>
+                <button class="button">Mas info </button>
+                </div>
+            </li>      
+            <li class="product">
+                <div class="img">
+                <a href="#"> <img src="../assets/images/products/hyperx-mouse-pulsefire-gaming.jpg" alt="products-3"> </a>
+                </div>
+                <div class="text">
+                    <div class="titleProduct">
+                        <a href="#">
+                    <h2>Mouse Hyperx gaming Pulsefire RGB</h2>
+                        </a>
+                    </div>
+                    <div class="descriptionProduct">
+                        <h2>Los audífonos con micrófono Logitech G PRO para juegos son el resultado de una estrecha colaboración con muchos jugadores profesionales de todos los géneros. </h2>
+                    </div>
+                </div>
+                <div class="price">
+                <del>$9000</del> <p>$6699</p>
+                <button class="button cart"></button>
+                <button class="button">Mas info </button>
+                </div>
+            </li>
+        </ol>
+    </div>
+</main>
+
+
+<!--FOOTER-->
+<footer>
+    <div class="content" style="text-align: left;">
+        <div class="footerColumn">
+            <h4>INFORMACION</h4>
+            <ul class ="informacion-vertical">
+                <li><a href="/pages/index.html">Inicio</a></li>
+                <li><a href="/pages/contacto.html">Contactanos!</a></li>
+                <li><a href="/pages/ayuda.html">Necesito Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn">
+            <h4>DONDE ENCONTRARNOS?</h4>
+            <p>El Salvador 5218 Soho, CABA.
+                <a href="tel:(011)1111-2395"><p>(011)1111-1111</p></a>
+                Lunes a Viernes de 08 a 22hs y Sabados y Domingos de 12 a 18hs
+                <a href="mailto:ejemplo@paginacoder.com.ar"> ejemplo@paginacoder.com.ar</a>
+                <ul>
+                    <li><img src="../assets/images/icons/visa-icon.png" ><img src="../assets/images/icons/mastercard-icon.png" ><img src="../assets/images/icons/cash-icon.png" ></li>
+                </ul>
+            </p>
+        </div>
+        <div class="footerColumn">
+            <h4>TECNOSHOP</h4>
+            <p>EN LAS REDES</p>
+            <ul>
+                <li><a href="https://www.facebook.com/"> <img src="../assets/images/social/facebook.jpg" ></a><a href="https://www.instagram.com/"><img src="../assets/images/social/instagram.jpg" ></a></li>
+            </ul>
+        </div>    
+        <div class="footerColumn">
+            <h4>NEWSLETTER</h4>
+                <form id = footerForm>
+                    <h5>Recibi las ultimas noticias en tu mail!</h5>
+                        <div class="">
+                        <label>Nombre:</label>
+                        </div>
+                        <div>
+                        <input type="text" id="nombre" name="nombre">
+                        </div>
+
+                        <div>
+                        <label>Email:</label>
+                        </div>
+                        <div>
+                        <input type="email" id="email" name="email">
+                        </div>                    
+
+                    <input type="submit">
+                </form>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

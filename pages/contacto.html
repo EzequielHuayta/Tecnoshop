@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.jpg">
+    <title>TecnoShop</title>
+</head>
+<body>
+
+<!--HEADER-->
+<div>
+    <header>
+        <div class="header-top">
+            <div class="header-logo"> 
+            <a href="/pages/index.html" > 
+                <h1>
+                    <img src="../assets/images/logo.jpg"> TECNOSHOP
+                </h1>  
+            </a>
+            </div>
+                <input type="search" placeholder="Search..." aria-label="Search" class="header-search">
+            <div class = header-images  >
+                <div class = "header-images">
+                    <a href="/pages/login.html"><img src="../assets/images/icons/user-icon.jpg"></a>
+                </div>
+                <div class = "header-images">
+                    <a href="/pages/cart.html"><img src="../assets/images/icons/shoppingcart-icon.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li ><a href="ofertas.html" style="color: rgb(255, 217, 0) !important;"> OFERTAS!</a></li>
+                    <li><a href="productos.html" >Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>   
+            </nav>
+        </div>
+
+    </header>
+</div>
+<!--MAIN-->
+<main>
+    <div>
+        <div class = "containerInformation">
+            <div class="firstRow">
+                <h2>
+                <img src="../assets/images/icons/email-icon.jpg" width="20px" height="20px"> Email
+                <p><a href="mailto:ejemplo@paginacoder.com.ar">ejemplo@paginacoder.com.ar</a></p>
+                </h2>
+            </div>
+                <div class="firstRow">
+                <h2>
+                    <img src="../assets/images/icons/phone-icon.jpg" width="20px" height="20px">Telefono
+                    <p><a href="tel:(011)1111-2395"><p>(011)1111-1111</p></a></p>
+                    </h2>
+                </div>
+        </div>
+                <div class="location">
+                    <h2>
+                    <img src="../assets/images/icons/location-icon.jpg" width="20px" height="20px">Ubicacion
+                    <p>El Salvador 5218 Soho, CABA.</p> 
+                    </h2>  
+                    <!--OPENSTREETMAP copy paste from internet-->
+                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.43374729156495%2C-34.586807258011945%2C-58.431065082550056%2C-34.5853123104769&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/-34.58606/-58.43241">Agrandar mapa</a></small>
+                </div>
+                <div class="containerContacto">
+                <h3>Aun tenes dudas o algun problema? Consultanos!</h3>
+                <form id = contactoForm>
+                    <label>Nombre/s:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label>Apellido/s:</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <label>email:</label>
+                    <input type="email" id="email" name="email"> 
+                    <div class="containerRadio">
+                    <input type="radio" name="compra" value="si">
+                    <label> Hice una compra</label>
+                    </div>
+                    <div class="containerRadio">
+                    <input type="radio" name="compra" value="no">
+                    <label > NO hice una compra</label>
+                    </div>
+
+
+                    <label>Motivo:</label>
+                    <select name="motivo" id="motivos">
+                        <option value="producto">Mi producto nunca llego</option>
+                        <option value="reembolso">Solicitar reembolso</option>
+                        <option value="garantia">Quisiera usar la garantia</option>
+                        <option value="otros">Otros</option>
+                    </select> 
+                    <textarea rows="4" cols="50" name="comentario" placeholder="Contanos con que podriamos ayudarte!"></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+
+    
+    
+    
+</main>
+
+<!--FOOTER-->
+<footer>
+    <div class="content" style="text-align: left;">
+        <div class="footerColumn">
+            <h4>INFORMACION</h4>
+            <ul class ="informacion-vertical">
+                <li><a href="/pages/index.html">Inicio</a></li>
+                <li><a href="/pages/contacto.html">Contactanos!</a></li>
+                <li><a href="/pages/ayuda.html">Necesito Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn">
+            <h4>DONDE ENCONTRARNOS?</h4>
+            <p>El Salvador 5218 Soho, CABA.
+                <a href="tel:(011)1111-2395"><p>(011)1111-1111</p></a>
+                Lunes a Viernes de 08 a 22hs y Sabados y Domingos de 12 a 18hs
+                <a href="mailto:ejemplo@paginacoder.com.ar"> ejemplo@paginacoder.com.ar</a>
+                <ul>
+                    <li><img src="../assets/images/icons/visa-icon.png" ><img src="../assets/images/icons/mastercard-icon.png" ><img src="../assets/images/icons/cash-icon.png" ></li>
+                </ul>
+            </p>
+        </div>
+        <div class="footerColumn">
+            <h4>TECNOSHOP</h4>
+            <p>EN LAS REDES</p>
+            <ul>
+                <li><a href="https://www.facebook.com/"> <img src="../assets/images/social/facebook.jpg" ></a><a href="https://www.instagram.com/"><img src="../assets/images/social/instagram.jpg" ></a></li>
+            </ul>
+        </div>    
+        <div class="footerColumn">
+            <h4>NEWSLETTER</h4>
+                <form id = footerForm>
+                    <h5>Recibi las ultimas noticias en tu mail!</h5>
+                        <div class="">
+                        <label>Nombre:</label>
+                        </div>
+                        <div>
+                        <input type="text" id="nombre" name="nombre">
+                        </div>
+
+                        <div>
+                        <label>Email:</label>
+                        </div>
+                        <div>
+                        <input type="email" id="email" name="email">
+                        </div>                    
+
+                    <input type="submit">
+                </form>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

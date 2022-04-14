@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/help.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.jpg">
+    <title>TecnoShop</title>
+</head>
+<body>
+<!--HEADER-->
+<div>
+    <header>
+        <div class="header-top">
+            <div class="header-logo"> 
+            <a href="/pages/index.html" > 
+                <h1>
+                    <img src="../assets/images/logo.jpg"> TECNOSHOP
+                </h1>  
+            </a>
+            </div>
+                <input type="search" placeholder="Search..." aria-label="Search" class="header-search">
+            <div class = header-images  >
+                <div class = "header-images">
+                    <a href="/pages/login.html"><img src="../assets/images/icons/user-icon.jpg"></a>
+                </div>
+                <div class = "header-images">
+                    <a href="/pages/cart.html"><img src="../assets/images/icons/shoppingcart-icon.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li ><a href="ofertas.html" style="color: rgb(255, 217, 0) !important;"> OFERTAS!</a></li>
+                    <li><a href="productos.html" >Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>   
+            </nav>
+        </div>
+
+    </header>
+</div>
+<!--MAIN-->
+<main style="padding: 1%;">
+    <div class="faq">
+        <h2 style="padding-bottom: 2%;">Preguntas frecuentes</h2>
+        <button class="accordion">¿Cómo realizar un pedido?</button>
+        <!--texto 
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        -->
+        <button class="accordion">Envíos</button>
+        <!--texto 
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        -->
+        <button class="accordion">Facturación</button>
+        <!--texto 
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        -->
+        <button class="accordion">Formas de pago</button>
+        <!--texto 
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        -->
+        <button class="accordion">Promociones</button>
+        <!--texto 
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        -->
+    </div>
+
+    <div class="containerDudas">
+        <h3>¿Todavía tenes dudas? <a href="/pages/contacto.html">Contactanos!</a> o envianos un mail: </h3>
+        <form>
+            <div class="emailForm">
+                <img src="../assets/images/icons/email-icon.jpg" width="30px" height="30px" style="padding-right: 1%;"> <input type="email" id="email" name="email" placeholder="email" style="width: 100%;display: block;"> 
+            </div>
+            <textarea rows="4" cols="50" name="comentario" placeholder="Contanos con que podriamos ayudarte!"></textarea>
+            <div class="submit">
+            <input type="submit">
+            </div>
+        </form>
+        <h5 style="font-family: 'nunitoextralight';">Tecnoshop responde todos los dias a excepcion de feriados con una demora habitual de 24 a 48 hrs</h5>
+    </div>
+</main>
+
+<!--FOOTER-->
+<footer>
+    <div class="content" style="text-align: left;">
+        <div class="footerColumn">
+            <h4>INFORMACION</h4>
+            <ul class ="informacion-vertical">
+                <li><a href="/pages/index.html">Inicio</a></li>
+                <li><a href="/pages/contacto.html">Contactanos!</a></li>
+                <li><a href="/pages/ayuda.html">Necesito Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn">
+            <h4>DONDE ENCONTRARNOS?</h4>
+            <p>El Salvador 5218 Soho, CABA.
+                <a href="tel:(011)1111-2395"><p>(011)1111-1111</p></a>
+                Lunes a Viernes de 08 a 22hs y Sabados y Domingos de 12 a 18hs
+                <a href="mailto:ejemplo@paginacoder.com.ar"> ejemplo@paginacoder.com.ar</a>
+                <ul>
+                    <li><img src="../assets/images/icons/visa-icon.png" ><img src="../assets/images/icons/mastercard-icon.png" ><img src="../assets/images/icons/cash-icon.png" ></li>
+                </ul>
+            </p>
+        </div>
+        <div class="footerColumn">
+            <h4>TECNOSHOP</h4>
+            <p>EN LAS REDES</p>
+            <ul>
+                <li><a href="https://www.facebook.com/"> <img src="../assets/images/social/facebook.jpg" ></a><a href="https://www.instagram.com/"><img src="../assets/images/social/instagram.jpg" ></a></li>
+            </ul>
+        </div>    
+        <div class="footerColumn">
+            <h4>NEWSLETTER</h4>
+                <form id = footerForm>
+                    <h5>Recibi las ultimas noticias en tu mail!</h5>
+                        <div class="">
+                        <label>Nombre:</label>
+                        </div>
+                        <div>
+                        <input type="text" id="nombre" name="nombre">
+                        </div>
+
+                        <div>
+                        <label>Email:</label>
+                        </div>
+                        <div>
+                        <input type="email" id="email" name="email">
+                        </div>                    
+
+                    <input type="submit">
+                </form>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
