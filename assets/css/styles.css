@@ -1095,3 +1095,42 @@ text-align: left;
         margin: 2% 0;
     }
 }
+
+@media (max-width: 1020px){
+    
+
+    .footerColumn{
+        width: 30%;
+        padding: 0 1%;
+    }
+
+    .header-logo{
+        padding: 0;
+        text-align: center;
+    }
+    footer input[type=text], footer input[type=email] {
+        width: 100%;
+
+    }
+
+    .topSellerContainer table {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    /**productos **/
+
+    .items{
+        padding: 0 3%;
+    }
+
+    .containerFilter{
+        min-width: 130px;
+    }
+
+    /**Ayuda**/
+    .submit input[type=submit] {
+        width: 100%;
+    }
+
+}
