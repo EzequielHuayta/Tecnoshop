@@ -194,7 +194,30 @@ footer input[type=text], footer input[type=email]{
     padding: 0 20%;
 }
 
+.perifericos{
+    display:flex;
+    flex-direction: column;
+}
+
+.marcas{
+    display:flex;
+    flex-direction: column;
+}
+
+#ofertas{
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
 @media (max-width: 480px){
+
 
     .footerColumn h4{
         font-family: "Titles";
@@ -300,7 +323,12 @@ footer input[type=text], footer input[type=email]{
 .topSellerItemsContainer img {
     width:  200px;
     height: 200px;
+    transition: transform .2s; /* Animation */
 }
+
+.topSellerItemsContainer img:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 
 
@@ -548,9 +576,12 @@ input[type=search] {
     width: 200px;
     height: 200px;
     padding: 10px;
+    transition: transform .2s;
 }
 
-
+.img img:hover {
+    transform: scale(1.1);
+}
 .cart{
     background-color: #64d868; 
     background-image: url('../images/icons/shoppingcartplus-icon.png');
@@ -685,6 +716,11 @@ main.login{
 .trash img{
     width: 40px;
     height: 40px;
+    transition: transform 0.2s;
+}
+
+.trash img:hover{
+    transform: scale(1.1);
 }
 
 .trash{
@@ -783,4 +819,274 @@ text-align: left;
     padding: 1% 0; 
     width: 10%; 
     text-align: center
+}
+
+@media (max-width: 720px){
+
+    .header-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-logo{
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .header-images{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        padding: 2% 2%;
+    }
+
+    .header-top h1{
+        font-size: 20px;
+    }
+
+    header input[type=search]{
+        display: none;
+    }
+
+    nav li a{
+        font-size: 16px;
+        padding: 16px 8px;
+    }
+
+
+    .carouselContainer img{
+        height: 250px
+    }
+    .content{
+        text-align: left;
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    .footerColumn{
+        width: 100%;
+        border-bottom: thin solid white;
+    }
+
+    .footerColumn h4{
+        padding: 5% 0;
+        font-size: 16px;
+    }
+
+    .footerColumn h5{
+        font-size: 15px;
+    }
+
+    .footerColumn li{
+        padding: 1% 0;
+        font-size: 14px;
+    }
+
+    .footerColumn label{
+        font-size: 13px;
+    }
+
+    .footerColumn li img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footerColumn p {
+        font-size: 15px;
+    }
+
+    .header-bottom{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    footer input[type=text], footer input[type=email] {
+        width: 40%;
+    }
+
+    footer input[type=submit] {
+        padding: 1% 2%;    
+    }
+
+
+
+    .topSellerContainer h2 {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .topSellerContainer table{
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .topSellerContainer img{
+        width:100px;
+        height:100px;
+    }
+
+    .topSellerItemsContainer img {
+        transition: none;
+    }
+
+    .topSellerItemsContainer tr, td {
+        font-size: 14px;
+    }
+
+    .topSellerItemsContainer button{
+        padding: 2px 6px
+    }
+
+    /**contacto**/
+
+    .containerContactoMain{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .containerInformation{
+        flex-direction: column;
+    }
+
+    .location iframe{
+        width: 285px ;
+        height: 250px;
+    }
+
+    .contactoForm{
+        align-items: center;
+    }
+
+    .containerContacto{
+        padding: 1% 15%;
+    }
+
+    .containerContacto textarea {
+        width:100%;
+    }
+
+    /**Ofertas y productos**/
+
+    .containerProducts{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .containerFilter{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .categories label{
+        display: inline-flex;
+        width: 49%;
+    }
+
+    .perifericos{
+        display: block;
+    }
+
+    .marcas{
+        display: block;
+    }
+    
+    .items{
+        padding: 0;
+    }
+
+    .img{
+        display: flex;
+        align-items: center;
+    }
+
+    .img img{
+        width: 90px;
+        height: 90px;
+        padding: 5px;
+        transition: none;
+    }
+
+    .text{
+        font-size: 12px;
+        padding: 10px;
+        min-width: 110px;
+    }
+
+    .descriptionProduct{
+        display: block;
+    }
+
+    .price{
+        font-size: 20px;
+    }
+
+    .cart {
+        padding: 15px 25px;
+        background-size: 25px;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+
+/**Ayuda**/
+    .faq{
+        width:100%;
+        padding: 0;
+    }
+
+    .containerDudas{
+        width: 100%;
+        padding: 0;
+    }
+
+    .submit input[type=submit] {
+        width: 100%;
+
+    }
+
+/**Cart**/
+
+    .containerCartProducts{
+        padding:0;
+    }
+
+    .text {
+        padding: 0;
+        font-size: 9px;
+        justify-content: space-around;
+    }
+
+    .titleProduct{
+        margin-left: 2%;
+    }
+    .descriptionProduct{
+        display: none;
+    }
+
+    .inputNumbers {
+        display: none;
+    }
+
+    .finalPrice{
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .trash{
+        padding: 0 2%;
+    }
+
+    .trash img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .containerInformation{
+        margin: 2% 0;
+    }
 }
