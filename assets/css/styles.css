@@ -210,11 +210,12 @@ footer input[type=text], footer input[type=email]{
     animation-fill-mode: forwards;
 }
 
+
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
 
 @media (max-width: 480px){
 
@@ -320,12 +321,12 @@ footer input[type=text], footer input[type=email]{
     height: 300px;
 }
 
+
 .topSellerItemsContainer img {
     width:  200px;
     height: 200px;
     transition: transform .2s; /* Animation */
 }
-
 .topSellerItemsContainer img:hover {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
@@ -572,6 +573,7 @@ input[type=search] {
 
 }
 
+
 .img img {
     width: 200px;
     height: 200px;
@@ -713,11 +715,13 @@ main.login{
     background: rgb(240, 238, 238)
 }
 
+
 .trash img{
     width: 40px;
     height: 40px;
     transition: transform 0.2s;
 }
+
 
 .trash img:hover{
     transform: scale(1.1);
@@ -928,6 +932,7 @@ text-align: left;
         height:100px;
     }
 
+
     .topSellerItemsContainer img {
         transition: none;
     }
@@ -1003,13 +1008,13 @@ text-align: left;
         align-items: center;
     }
 
+
     .img img{
         width: 90px;
         height: 90px;
         padding: 5px;
         transition: none;
     }
-
     .text{
         font-size: 12px;
         padding: 10px;
