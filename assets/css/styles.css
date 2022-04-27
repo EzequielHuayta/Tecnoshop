@@ -26,11 +26,15 @@ html,body
 
 .blue{
     background-color: rgb(52, 104, 214) !important;
-    color: white !important;
+    color: white ;
 }
 
 .blue:hover{
     background-color: rgb(42, 82, 170) !important;
+}
+
+a:hover{
+    color: white !important;
 }
 *{
     padding: 0;
@@ -46,13 +50,21 @@ nav ul {
     overflow: hidden;
     text-align: center;
 } 
+
+ul{
+    padding-left: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
 nav li {
     float: left;
 }
 a { 
     font-family: "nunitoextralight";
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
 }
 nav li a{
@@ -61,7 +73,7 @@ nav li a{
     text-align: center;
     padding: 16px;
     font-size: 18px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
   
 nav li a:hover {
@@ -157,6 +169,10 @@ li {
 .footerColumn img{
     width:  50px; 
     height: 50px;
+}
+
+.containerContactoMain a:hover{
+    color: black !important;
 }
 
 .footerColumn{
@@ -275,7 +291,6 @@ footer input[type=text], footer input[type=email]{
 
 .containerCartProducts{
     display: flex;
-    padding: 0 8% 0 8%;
 }
 .button:hover{
     background-color: #aaa9a9; 
@@ -299,11 +314,7 @@ footer input[type=text], footer input[type=email]{
     background-color: #45a049 !important;
 } 
 
-.container {
-    width: 100%;
-    text-align: center;
-    display: inline-block
-}
+
 
 .topSellerContainer{
     width: 100%;
@@ -347,7 +358,7 @@ footer input[type=text], footer input[type=email]{
 .faq{
     display: flex;
     font-family: "Titles";
-    width: 50%;
+    width: 100%;
     text-align: center;
     padding: 0 25%;
     flex-direction: column;
@@ -366,7 +377,7 @@ footer input[type=text], footer input[type=email]{
 .containerDudas{
     display: flex;
     font-family: "Titles";
-    width: 50%;
+    width: 100%;
     text-align: center;
     padding: 2% 25%;
     flex-direction: column;
@@ -374,7 +385,7 @@ footer input[type=text], footer input[type=email]{
 }
 
 .containerDudas form{
-    width: 60%;
+    width: 100%;
     display: flex;
     padding: 0 20%;
     flex-direction: column;
@@ -570,7 +581,8 @@ input[type=search] {
 
 .img{
     border-right: thin solid #ddd;
-
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -765,17 +777,20 @@ main.login{
 .formContainer{
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 100%;
     height: 100%;
-    text-align: center;
     margin-top: 3%;
+    margin-bottom: 3%;
     /* */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     }
+
+.formPersonal{
+    padding: 0 5%;
+}
 
 
 .containerPagar{
@@ -823,6 +838,12 @@ text-align: left;
     padding: 1% 0; 
     width: 10%; 
     text-align: center
+}
+
+.carousel-control-next, .carousel-control-prev {
+
+    width: 5%;
+
 }
 
 @media (max-width: 720px){
@@ -932,7 +953,9 @@ text-align: left;
         height:100px;
     }
 
-
+    .topSellerContainer .card-footer {
+        display: none;
+    }
     .topSellerItemsContainer img {
         transition: none;
     }
@@ -952,6 +975,7 @@ text-align: left;
         flex-direction: column;
         text-align: center;
     }
+
 
     .containerInformation{
         flex-direction: column;
@@ -1096,7 +1120,7 @@ text-align: left;
     }
 }
 
-@media (max-width: 1020px){
+@media (min-width: 720px) AND (max-width: 1124px) {
     
 
     .footerColumn{
@@ -1133,4 +1157,18 @@ text-align: left;
         width: 100%;
     }
 
+
 }
+
+
+/**Bootstrap override**/
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: grey;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
