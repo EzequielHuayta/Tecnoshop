@@ -333,12 +333,12 @@ footer input[type=text], footer input[type=email]{
 }
 
 
-.topSellerItemsContainer img {
+.card img {
     width:  200px;
     height: 200px;
     transition: transform .2s; /* Animation */
 }
-.topSellerItemsContainer img:hover {
+.card img:hover {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
