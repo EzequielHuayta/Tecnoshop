@@ -164,6 +164,7 @@ li {
     font-family: "Titles";
     font-weight: bold;
     padding: 3% 0;
+    width: 100%;
 }
 
 .footerColumn img{
@@ -207,7 +208,7 @@ footer input[type=text], footer input[type=email]{
 .content{
     display: flex;
     width: 100%;
-    padding: 0 20%;
+    padding: 0 17%;
 }
 
 .perifericos{
@@ -233,59 +234,7 @@ footer input[type=text], footer input[type=email]{
     to { opacity: 1; }
 }
 
-@media (max-width: 480px){
 
-
-    .footerColumn h4{
-        font-family: "Titles";
-        font-weight: bold;
-        padding: 6% 0;
-        font-size: 13px
-    }
-    
-    .footerColumn img{
-        width:  25px; 
-        height: 25px;
-    }
-    
-    .footerColumn{
-        width: 25%;
-        text-align: left;
-        overflow-wrap: break-word;
-        font-size : 12px;
-        padding: 0 3px;
-    }
-    
-
-    .footerColumn li{
-        padding: 2% 0;
-
-    }
-    
-    footer input[type=submit] {
-        margin-top: 2px;
-        padding:1px 3px; 
-        background:#ccc; 
-        border:0 none;
-        cursor:pointer;
-        border-radius: 5px; 
-    }
-    
-    footer input[type=text], footer input[type=email]{
-        width: 80%;
-        border: none;
-        background: transparent;
-        border-bottom: 1px solid white;
-        color: white;
-        border-radius: 0 !important;
-        padding: 1px 5px;
-        margin-bottom: 3%;
-      }
-
-    footer input[type=text]:focus, footer input[type=email]:focus{
-        outline: none;
-    }
-}
 
 /*Styles index*/
 
@@ -296,6 +245,8 @@ footer input[type=text], footer input[type=email]{
     background-color: #aaa9a9; 
 } 
 
+
+
 .button {
     padding: 10px 20px;
     background-color: #e7e7e7; 
@@ -304,6 +255,7 @@ footer input[type=text], footer input[type=email]{
     margin: 4px 2px;
     cursor: pointer;
 }
+
 
 .addCart{
     background-color: #4CAF50 !important;
@@ -327,10 +279,7 @@ footer input[type=text], footer input[type=email]{
     width: 100%;
 }
 
-.carouselContainer img{
-    width: 100%;
-    height: 300px;
-}
+
 
 
 .card img {
@@ -788,10 +737,15 @@ main.login{
     border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
-.formPersonal{
+.formPersonal .row{
     padding: 0 5%;
+    justify-content: space-between;
 }
 
+
+.col-md-5 .row{
+    padding: 0;
+}
 
 .containerPagar{
 display: flex;
@@ -846,6 +800,66 @@ text-align: left;
 
 }
 
+@media (max-width: 480px){
+
+
+    .footerColumn h4{
+        font-family: "Titles";
+        font-weight: bold;
+        padding: 6% 0;
+        font-size: 13px
+    }
+    
+    .footerColumn img{
+        width:  25px; 
+        height: 25px;
+    }
+    
+    .footerColumn{
+        width: 25%;
+        text-align: left;
+        overflow-wrap: break-word;
+        font-size : 12px;
+        padding: 0 3px;
+    }
+    
+
+    .footerColumn li{
+        padding: 2% 0;
+
+    }
+    
+    footer input[type=submit] {
+        margin-top: 2px;
+        padding:1px 3px; 
+        background:#ccc; 
+        border:0 none;
+        cursor:pointer;
+        border-radius: 5px; 
+    }
+    
+    footer input[type=text], footer input[type=email]{
+        width: 80%;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid white;
+        color: white;
+        border-radius: 0 !important;
+        padding: 1px 5px;
+        margin-bottom: 3%;
+      }
+
+    footer input[type=text]:focus, footer input[type=email]:focus{
+        outline: none;
+    }
+
+    .carouselMain, .carousel-item img{
+        height: 300px
+    }
+
+
+}
+
 @media (max-width: 720px){
 
     .header-top{
@@ -885,6 +899,11 @@ text-align: left;
     .carouselContainer img{
         height: 250px
     }
+
+    .carouselMain, .carousel-item img{
+        height: 300px
+    }
+
     .content{
         text-align: left;
         flex-direction: column;
@@ -956,6 +975,8 @@ text-align: left;
     .topSellerContainer .card-footer {
         display: none;
     }
+
+
     .topSellerItemsContainer img {
         transition: none;
     }
@@ -1041,8 +1062,10 @@ text-align: left;
     }
     .text{
         font-size: 12px;
-        padding: 10px;
-        min-width: 110px;
+        min-width: 130px;
+        padding: 0;
+        font-size: 9px;
+        justify-content: space-around;
     }
 
     .descriptionProduct{
@@ -1051,15 +1074,23 @@ text-align: left;
 
     .price{
         font-size: 20px;
+        min-width: 100px;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
     }
 
     .cart {
-        padding: 15px 25px;
+        padding: 15px 25px !important;
         background-size: 25px;
+        display: inline !important;
     }
 
     .button {
         font-size: 12px;
+        padding: 5px 10px;
+        display: none;
     }
 
 /**Ayuda**/
@@ -1084,11 +1115,6 @@ text-align: left;
         padding:0;
     }
 
-    .text {
-        padding: 0;
-        font-size: 9px;
-        justify-content: space-around;
-    }
 
     .titleProduct{
         margin-left: 2%;
@@ -1120,12 +1146,16 @@ text-align: left;
     }
 }
 
-@media (min-width: 720px) AND (max-width: 1124px) {
+@media (min-width: 720px) AND (max-width: 1024px) {
     
 
     .footerColumn{
         width: 30%;
         padding: 0 1%;
+    }
+
+    .content{
+        padding:0 10%;
     }
 
     .header-logo{
@@ -1152,10 +1182,23 @@ text-align: left;
         min-width: 130px;
     }
 
+    .descriptionProduct{
+        display: none;
+    }
+
+    .img img{
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+
     /**Ayuda**/
     .submit input[type=submit] {
         width: 100%;
     }
+
+
 
 
 }
@@ -1172,3 +1215,6 @@ text-align: left;
     border-top: none;
 }
 
+.h2, h2 {
+    font-size: calc(1.225rem + .9vw);
+}
