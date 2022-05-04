@@ -51,6 +51,9 @@ nav{
             padding: 16px;
             font-size: 18px;
             text-decoration: none !important;
+            &:hover{
+                background-color: #111111;
+            }
         }
     }
 }
