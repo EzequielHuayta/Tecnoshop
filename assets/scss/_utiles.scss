@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .blue{
     background-color: rgb(52, 104, 214) !important;
     color: white ;
@@ -16,10 +25,124 @@ a{
     }
 }
 
+
+h2 {
+    font-family: "Titles";
+    color: black;
+}
+
 p {
     margin-bottom: 0;
 }
 
 li {
     list-style-type: none;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #e7e7e7;
+    border: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    &:hover {
+        background-color: $button-color;
+    }
+}
+
+.cart {
+    background-color: $cart-color;
+    background-image: url('../images/icons/shoppingcartplus-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45px;
+    padding: 25px 60px;
+    &:hover {
+        background-color: $cartHover-color !important;
+    }
+}
+
+.items {
+    display: inline-flex;
+    padding: 0 10%;
+    flex-direction: column;
+    width: 100%;
+    .product {
+        display: flex;
+        width: 100%;
+        margin-bottom: 1%;
+        background: white;
+        &:hover .text, &:hover .price {
+            background: rgb(240, 238, 238);
+        }
+        .img {
+            border-right: thin solid #ddd;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+                transition: transform .2s;
+                &:hover{
+                    transform: scale(1.1);
+                    }
+            }
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            font-family: "Titles";
+            width: 100%;
+            .titleProduct {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+            }
+        }
+            .descriptionProduct {
+                font-family: 'nunitoextralight';
+                overflow: hidden;
+                font-size: 9px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                h2 {
+                    font-family: "nunitoextralight";
+                }
+            }
+            .price {
+                padding: 1rem;
+                border-left: thin solid #ddd;
+                font-family: "Titles";
+                text-align: center;
+                font-size: 31px;
+         }
+            .inputNumbers {
+                display: flex;
+                align-items: center;
+            }
+            .finalPrice {
+                padding: 1rem;
+                font-family: "Titles";
+                font-size: 25px;
+                align-items: center;
+                display: flex;
+                width: 20%;
+            }
+            .trash {
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    transition: transform 0.2s;
+                }
+            }
+    }
 }

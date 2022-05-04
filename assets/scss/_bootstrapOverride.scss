@@ -14,3 +14,22 @@
 .h2, h2 {
     font-size: calc(1.225rem + .9vw);
 }
+
+.formPersonal{
+    .col-md-5{
+            .row {
+            padding: 0;
+        }
+    }
+}
+
+.card  {
+    img {
+        width: 200px;
+        height: 200px;
+        transition: transform .2s;
+        &:hover{
+         transform: scale(1.1);
+        }
+    }
+}
