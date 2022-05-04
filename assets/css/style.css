@@ -1,0 +1,236 @@
+header {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0D0D0D;
+}
+
+header input[type=search] {
+  overflow: hidden;
+  display: inline-block;
+  width: 60%;
+  padding: 6px;
+  font-size: 17px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.header-top {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.header-top img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #262626;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+
+h1, a.header-logo {
+  color: #dddddd;
+  font-family: "Titles";
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 1%;
+}
+
+.header-bottom {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #262626;
+}
+
+.header-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 1% 10px 10px;
+}
+
+footer {
+  background-color: #0D0D0D;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+footer h4 {
+  font-family: "Titles";
+  font-weight: bold;
+  padding: 3% 0;
+  width: 100%;
+}
+
+.footerColumn {
+  width: 25%;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.footerColumn li {
+  padding: 0.8% 0;
+}
+
+.footerColumn img {
+  width: 50px;
+  height: 50px;
+}
+
+.footerColumn h4 {
+  font-family: "Titles";
+  font-weight: bold;
+  padding: 3% 0;
+  width: 10;
+}
+
+.topSellerContainer {
+  width: 100%;
+  padding: 2% 0 5% 0;
+  display: block;
+}
+
+.topSellerItemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Titles";
+}
+
+.topSellerItemsContainer tr, td {
+  text-align: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 17%;
+}
+
+@font-face {
+  font-family: 'nunitoextralight';
+  src: url("../fonts/nunito-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/nunito-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titles';
+  src: url("../fonts/Oxygen-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.blue {
+  background-color: #3468d6 !important;
+  color: white;
+}
+
+.bluehover {
+  background-color: #2a52aa !important;
+}
+
+a {
+  font-family: "nunitoextralight";
+  font-weight: bold;
+  text-decoration: none !important;
+  color: black;
+}
+
+ahover {
+  color: white !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: grey;
+}
+
+.h2, h2 {
+  font-size: calc(1.225rem + .9vw);
+}
+/*# sourceMappingURL=style.css.map */

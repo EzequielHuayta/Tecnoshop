@@ -1,0 +1,25 @@
+.blue{
+    background-color: rgb(52, 104, 214) !important;
+    color: white ;
+    &hover{
+    background-color: rgb(42, 82, 170) !important;
+    }
+}
+
+a { 
+    font-family: "nunitoextralight";
+    font-weight: bold;
+    text-decoration: none !important;
+    color: black;
+    &hover{
+        color: white !important;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}

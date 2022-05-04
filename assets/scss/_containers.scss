@@ -1,0 +1,21 @@
+.topSellerContainer{
+    width: 100%;
+    padding: 2% 0 5% 0;
+    display: block;
+}
+
+.topSellerItemsContainer{
+    display:flex;
+    justify-content: center;
+    font-family: "Titles";
+}
+
+.topSellerItemsContainer tr,td{
+    text-align: center
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    padding: 0 17%;
+}
