@@ -16,8 +16,7 @@ html,body
 }
 
 a{ 
-    font-family: "nunitoextralight";
-    font-weight: bold;
+    @include font("nunito",true);
     text-decoration: none !important;
     color: black;
     &:hover{
@@ -27,7 +26,7 @@ a{
 
 
 h2 {
-    font-family: "Titles";
+    @include font("Titles",false);
     color: black;
 }
 
@@ -40,11 +39,11 @@ li {
 }
 
 .button {
-    padding: 10px 20px;
+    padding: map-get($botonMediaBig, padding );
     background-color: #e7e7e7;
     border: none;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: map-get($botonMediaBig, font-size);
+    margin: map-get($botonMediaBig, margin );
     cursor: pointer;
     &:hover {
         background-color: $button-color;
@@ -52,6 +51,7 @@ li {
 }
 
 .cart {
+    @extend .button;
     background-color: $cart-color;
     background-image: url('../images/icons/shoppingcartplus-icon.png');
     background-repeat: no-repeat;
@@ -105,14 +105,13 @@ li {
             }
         }
             .descriptionProduct {
-                font-family: 'nunitoextralight';
                 overflow: hidden;
                 font-size: 9px;
                 width: 100%;
                 height: 100%;
                 display: flex;
                 h2 {
-                    font-family: "nunitoextralight";
+                    @include font("nunito",false);
                 }
             }
             .price {

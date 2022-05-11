@@ -7,7 +7,7 @@
 .topSellerItemsContainer{
     display:flex;
     justify-content: center;
-    font-family: "Titles";
+    @include font("Titles",false);
 }
 
 .topSellerItemsContainer tr,td{
@@ -22,7 +22,7 @@
 
 .faq{
     display: flex;
-    font-family: "Titles";
+    @include font("Titles",false);
     width: 100%;
     text-align: center;
     padding: 0 25%;
@@ -32,7 +32,7 @@
 
 .containerDudas {
     display: flex;
-    font-family: "Titles";
+    @include font("Titles",false);
     width: 100%;
     text-align: center;
     padding: 2% 25%;
@@ -48,7 +48,7 @@
 
 .containerContacto {
     display: flex;
-    font-family: "Titles";
+    @include font("Titles",false);
     padding: 1% 25%;
     flex-direction: column;
     align-items: center;
@@ -111,8 +111,7 @@
             padding: 5px 0;
         }
         .cartImg {
-            width: 30px;
-            height: 30px;
+            @include tamañoImagen(30px,30px);
         }
     }
 }

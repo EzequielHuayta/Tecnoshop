@@ -1,0 +1,21 @@
+@mixin tamañoImagen ($width,$height) { 
+    width: $width;
+    height: $height;
+}   
+
+@mixin font($font,$bold) {
+
+    @if $font == "Titles"{
+        font-family: "Titles";
+        @if $bold == true{
+            font-weight: bold;
+        }
+    }
+
+    @else{
+        font-family: "nunitoextralight";
+        @if $bold == true{
+            font-weight: bold;
+        }
+    } 
+}
