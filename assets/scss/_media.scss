@@ -1,0 +1,403 @@
+@media (max-width: 480px){
+
+    .footerColumn{
+        width: 25%;
+        text-align: left;
+        overflow-wrap: break-word;
+        font-size : 12px;
+        padding: 0 3px;
+        h4{
+            font-family: "Titles";
+            font-weight: bold;
+            padding: 6% 0;
+            font-size: 13px
+        }
+        img{
+            width:  25px; 
+            height: 25px;
+        }
+        li{
+            padding: 2% 0;
+    
+        }
+    }
+
+    footer{
+        input[type=submit] {
+            margin-top: 2px;
+            padding:1px 3px; 
+            background:#ccc; 
+            border:0 none;
+            cursor:pointer;
+            border-radius: 5px; 
+        }
+        input[type=text], input[type=email]{
+            width: 80%;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+            color: white;
+            border-radius: 0 !important;
+            padding: 1px 5px;
+            margin-bottom: 3%;
+            &:hover{
+                outline: none;
+            }
+          }
+    }
+    
+    .carouselMain, .carousel-item img{
+        height: 300px
+    }
+
+}
+
+
+@media (max-width: 720px){
+
+    header{
+        input[type=search]{
+            display: none;
+        }
+        .header-top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .header-logo{
+                flex-direction: column;
+                width: 50%;
+            }
+            .header-images{
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                padding: 2% 2%;
+            }
+            h1{
+                font-size: 20px;
+            }
+        }
+        .header-bottom{
+            font-size: 20px;
+            width: 100%;
+            nav li a{
+                font-size: 16px;
+                padding: 16px 8px;
+            }
+        }
+    }
+
+
+    footer{
+        .content{
+            text-align: left;
+            flex-direction: column;
+            padding: 0%;
+            input[type=text], input[type=email] {
+                width: 40%;
+            }
+            input[type=submit] {
+                padding: 1% 2%;    
+            }
+            .footerColumn{
+                width: 100%;
+                border-bottom: thin solid white;
+                h4{
+                    padding: 5% 0;
+                    font-size: 16px;
+                }
+                h5{
+                    font-size: 15px;
+                }
+                li{
+                    padding: 1% 0;
+                    font-size: 14px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                label{
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+
+    .topSellerItemsContainer{
+        img {
+            transition: none;
+        }
+        tr, td {
+            font-size: 14px;
+        }
+        button{
+            padding: 2px 6px
+        }
+    }
+
+
+    .carouselContainer img{
+        height: 250px
+    }
+
+    .carouselMain, .carousel-item img{
+        height: 300px
+    }
+
+
+
+    .topSellerContainer{
+        h2 {
+            text-align: center;
+            margin-bottom: 3%;
+        }
+        img{
+        width:100px;
+        height:100px;
+        }
+        .card-footer {
+            display: none;
+        }
+    }
+
+
+
+    /**contacto**/
+
+    .containerContactoMain{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .containerInformation{
+        flex-direction: column;
+    }
+
+    .location{
+        iframe{
+        width: 285px ;
+        height: 250px;
+        }
+    }
+
+
+    .containerContacto{
+        padding: 1% 15%;
+        .contactoForm{
+            align-items: center;
+        }
+        textarea {
+            width:100%;
+        }
+    }
+
+    /**Ofertas y productos**/
+
+    .containerProducts{
+        flex-direction: column;
+        padding: 0;
+        .containerFilter{
+            width: 100%;
+            margin-bottom: 10%;
+        }
+        .items{
+            padding: 0;
+            .product{
+                .img{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                        padding: 5px;
+                        transition: none;
+                    } 
+                }
+                .text{
+                    font-size: 12px;
+                    min-width: 130px;
+                    padding: 0;
+                    font-size: 9px;
+                    justify-content: space-around;
+                    .descriptionProduct{
+                        display: none;
+                    }
+                }
+                .price{
+                    font-size: 20px;
+                    min-width: 100px;
+                    padding: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    .cart {
+                        padding: 15px 25px !important;
+                        background-size: 25px;
+                        display: inline !important;
+                    }
+                    .button {
+                        font-size: 12px;
+                        padding: 5px 10px;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .categories label{
+        display: inline-flex;
+        width: 49%;
+    }
+
+    .perifericos{
+        display: block;
+    }
+
+    .marcas{
+        display: block;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/**Ayuda**/
+    .faq{
+        width:100%;
+        padding: 0 10%;
+    }
+
+    .containerDudas{
+        width: 100%;
+        padding: 0 10%;
+    }
+
+/**Cart**/
+
+    .containerCartProducts{
+        .h3, h3 {
+            font-size: calc(1.1rem + .6vw);
+        }
+        .items{
+            padding: 0%;
+            .product{
+                .text{
+                    padding: 0.5rem;
+                    min-width: 130px;
+                    justify-content: center;
+                    .titleProduct{
+                        margin-left: 2%;
+                    }
+                    .descriptionProduct{
+                        display: none;
+                    }
+                }
+                .inputNumbers {
+                    display: none;
+                }
+                .finalPrice{
+                    padding: 0;
+                    font-size: 18px;
+                }
+                .img {
+                    align-items: center;
+                    img{
+                    width: 90px;
+                    height: 90px;
+                    padding: 5px;
+                    transition: none;
+                }
+                }
+                .trash{
+                    padding: 0 2%;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .containerInformation{
+        margin: 2% 0;
+    }
+}
+
+@media (min-width: 720px) AND (max-width: 1024px) {
+    
+    .content{
+        padding:0 10%;
+        .footerColumn{
+            width: 30%;
+            padding: 0 1%;
+        }
+    }
+
+    .header-logo{
+        padding: 0;
+        text-align: center;
+    }
+
+    footer{
+        input[type=text], input[type=email] {
+        width: 100%;
+        }
+    }
+
+    .topSellerContainer table {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    /**productos **/
+
+    .items{
+        padding: 0 3%;
+        .text{
+        .descriptionProduct{
+            display: none;
+        }
+        }
+        .img{
+            img{
+                width: 150px !important;
+                height: 150px !important;
+                display: flex ;
+                align-items: center;
+            }
+        }
+    }
+
+    .containerFilter{
+        min-width: 130px;
+    }
+
+    /**Ayuda**/
+    .submit input[type=submit] {
+        width: 100%;
+    }
+
+
+
+
+}

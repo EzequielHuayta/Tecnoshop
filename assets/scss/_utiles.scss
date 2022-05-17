@@ -64,6 +64,23 @@ li {
 }
 
 .items {
+
+    @media (min-width: $medium) AND (max-width: $large){
+        padding: 0 3%;
+        .text{
+        .descriptionProduct{
+            display: none;
+        }
+        }
+        .img{
+            img{
+                width: 150px !important;
+                height: 150px !important;
+                display: flex ;
+                align-items: center;
+            }
+        }
+    }
     display: inline-flex;
     padding: 0 10%;
     flex-direction: column;
@@ -143,5 +160,12 @@ li {
                     transition: transform 0.2s;
                 }
             }
+    }
+}
+
+
+.submit input[type=submit] {
+    @media (min-width: $medium) AND (max-width: $large) {
+    width: 100%;
     }
 }

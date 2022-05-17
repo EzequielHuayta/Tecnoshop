@@ -14,6 +14,11 @@ header{
         border-radius: 20px;
         outline: none;
     }
+    @media (max-width: $medium){
+        input[type=search]{
+            display: none;
+        }
+    }
 }
 
 .header-top {
@@ -26,11 +31,30 @@ header{
         @include tamañoImagen(50px,50px);
     }
 
+    @media (max-width: $medium){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .header-images {
         display: flex;
         padding: 10px 1% 10px 10px;
+
+        @media (max-width: $medium){
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            padding: 2% 2%;
+        }
       }
-      
+    h1{
+        @media (max-width: $medium){
+            font-size: 20px;
+        }
+    }
 }
 
 nav{
@@ -66,6 +90,15 @@ nav{
     display: flex;
     padding-left: 1%;
 
+    @media (max-width: $medium){
+        flex-direction: column;
+        width: 50%;
+    }
+
+    @media (min-width: $medium) AND (max-width: $large){
+        padding: 0;
+        text-align: center;
+    }
     h1,a{
         color:#dddddd;
         @include font("Titles",false);
@@ -78,5 +111,14 @@ nav{
     align-items: center;
     display: flex;
     background-color: #262626;
+
+    @media(max-width: $medium){
+        font-size: 20px;
+        width: 100%;
+        nav li a{
+            font-size: 16px;
+            padding: 16px 8px;
+        }
+    }
 }
 

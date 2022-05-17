@@ -24,6 +24,7 @@
 }
 
 .card  {
+
     img {
         width: 200px;
         height: 200px;
@@ -31,5 +32,17 @@
         &:hover{
          transform: scale(1.1);
         }
+    }
+    @media (max-width: $medium){
+        img{
+            width:100%;
+            height:100px;
+        }
+    }
+}
+
+.carouselMain .carousel-item img{
+    @media (max-width: $small){
+    height: 300px;
     }
 }

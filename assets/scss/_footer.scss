@@ -1,33 +1,146 @@
 footer {
     background-color: $footer-color;
+    color: white;
+    @media (max-width: $small){
+        input[type=submit] {
+            margin-top: 2px;
+            padding:1px 3px; 
+            background:#ccc; 
+            border:0 none;
+            cursor:pointer;
+            border-radius: 5px; 
+        }
+        input[type=text], input[type=email]{
+            width: 80%;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+            color: white;
+            border-radius: 0 !important;
+            padding: 1px 5px;
+            margin-bottom: 3%;
+            &:hover{
+                outline: none;
+            }
+        }
+    }
+
+        @media (max-width: $medium) {
+            input[type=text], input[type=email] {
+                width: 40%;
+            }
+            input[type=submit] {
+                padding: 1% 2%;    
+            }
+        }
+
+        @media (min-width: $medium) AND (max-width: $large){
+            input[type=text], input[type=email] {
+                width: 100%;
+            }
+        }
+    
+    .content{
+    @media (max-width: $medium){
+    background-color: $footer-color;
     width: 100%;
     display: flex;
     justify-content:center;
     color: white;
+    }
+
 
     a{
         color: white;
     }
-    .footerColumn{
-        width: 25%;
-        text-align: left;
-        overflow-wrap: break-word;
-        li{
-            padding: 0.8% 0;
-        }
-        img{
-            @include tamañoImagen(50px,50px);
-        }
-        h4{
-            @include font("Titles",true);
-            padding: 3% 0;
-            width: 100%
-        }
-        ul {
-            padding-left: 0;
+        .footerColumn{
+            width: 25%;
+            text-align: left;
+            overflow-wrap: break-word;
+            @media (max-width: $small) {
+                width: 25%;
+                text-align: left;
+                overflow-wrap: break-word;
+                font-size : 12px;
+                padding: 0 3px;  
+            }
+            @media (max-width: $medium){
+                width: 100%;
+                border-bottom: thin solid white;
+            }
+
+            @media (min-width: $medium) AND (max-width: $large){
+                width: 30%;
+                padding: 0 1%;
+            }
+            li{
+                padding: 0.8% 0;
+            }
+            img{
+                @include tamañoImagen(50px,50px);
+
+                @media (max-width: $small) {
+                    width:  25px; 
+                    height: 25px;
+                }
+
+                @media (max-width: $medium){
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            h4{
+                @include font("Titles",true);
+                padding: 3% 0;
+                width: 100%;
+                @media (max-width: $small) {
+                    font-family: "Titles";
+                    font-weight: bold;
+                    padding: 6% 0;
+                    font-size: 13px;
+                }
+                @media (max-width: $medium) {
+                    padding: 5% 0;
+                    font-size: 16px;
+                }
+            }
+            h5{
+                @media (max-width: $medium) {
+                    font-size: 15px;
+                }
+            }
+            li{
+                @media (max-width: $small){
+                    padding: 2% 0;
+                    img{
+                        width:  25px; 
+                        height: 25px;
+                    }
+                }
+                @media (max-width: $medium){
+                    padding: 1% 0;
+                    font-size: 14px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+            label{
+                @media (max-width: $medium){
+                    font-size: 13px;
+                }
+            }
+            p{
+                @media (max-width: $medium) {
+                    font-size: 15px;
+                }
+            }
+            ul {
+                padding-left: 0;
+            }
         }
     }
-
 }
 
 

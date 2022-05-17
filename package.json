@@ -1,0 +1,26 @@
+{
+  "name": "tecnoshop---huayta-romay",
+  "version": "1.0.0",
+  "description": "Agregue keywords y descriptions en todos los htmls incluyendo principalmente:\r keywords:\r - Tecnoshop\r - gaming\r - tecnologia\r - Palermo\r - Efectivo\r - Visa\r - mastercard\r - Pagar\r - Mouse\r - Teclados\r - Keyboard\r - Logueo\r - Login\r - Register\r - contacto\r - contact\r - ayuda\r - faq\r - compra\r - buy\r Las descripciones acorde al html que este ubicado.\r Agregue sitemap.xml\r Verifique que los h1,h2,h3 etc.. que tengo esten correctamente, ejemplo en productos.html los productos son h2 para mejor seo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzequielHuayta/Tecnoshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EzequielHuayta/Tecnoshop/issues"
+  },
+  "homepage": "https://github.com/EzequielHuayta/Tecnoshop#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

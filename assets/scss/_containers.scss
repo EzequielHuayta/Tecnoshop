@@ -2,12 +2,36 @@
     width: 100%;
     padding: 2% 0 5% 0;
     display: block;
+    @media (max-width: $medium) {
+        h2 {
+            text-align: center;
+            margin-bottom: 3%;
+        }
+        img{
+        width:100px;
+        height:100px;
+        }
+        .card-footer {
+            display: none;
+        }
+    }
 }
 
 .topSellerItemsContainer{
     display:flex;
     justify-content: center;
     @include font("Titles",false);
+    @media(max-width: $medium){
+        img {
+            transition: none;
+        }
+        tr, td {
+            font-size: 14px;
+        }
+        button{
+            padding: 2px 6px
+        }
+    }
 }
 
 .topSellerItemsContainer tr,td{
@@ -18,6 +42,17 @@
     display: flex;
     width: 100%;
     padding: 0 17%;
+    @media (max-width: $medium){
+        display: inline !important;
+        padding: 0;
+    }
+    @media (min-width: $medium) AND (max-width: $large) {
+        padding:0 10%;
+        .footerColumn{
+            width: 30%;
+            padding: 0 1%;
+        }
+    }
 }
 
 .faq{
@@ -25,9 +60,13 @@
     @include font("Titles",false);
     width: 100%;
     text-align: center;
-    padding: 0 25%;
+    padding: 0 20%;
     flex-direction: column;
     justify-content: center;
+    @media (max-width:$medium){
+        width:100%;
+        padding: 0 10%;
+    }
 }
 
 .containerDudas {
@@ -38,15 +77,26 @@
     padding: 2% 25%;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width:$medium) {
+        width: 100%;
+        padding: 0 10%;
+    }
 }
 
 .containerContactoMain  {
+    @media (max-width: $medium){
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
     a:hover{
         color: black !important;
     }
 }
 
 .containerContacto {
+
     display: flex;
     @include font("Titles",false);
     padding: 1% 25%;
@@ -75,24 +125,140 @@
         border: 1px solid black;
         padding: .5rem;
     }
+
+    @media (max-width: $medium){
+        padding: 1% 15%;
+        .contactoForm{
+            align-items: center;
+        }
+        textarea {
+            width:100%;
+        }
+    }
 }
 
 .containerProducts {
+
+
     display: flex;
     padding: 2rem;
     .containerFilter {
+
+        @media(max-width: $small)
+        {
+            width: 100%;
+            margin-bottom: 10%;
+        }
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 25%;
     }
+
+    @media (max-width: $medium){
+        flex-direction: column;
+        padding: 0;
+        .containerFilter{
+            width: 100%;
+            margin-bottom: 10%;
+        }
+        .items{
+            padding: 0;
+            .product{
+                .img{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                        padding: 5px;
+                        transition: none;
+                    } 
+                }
+                .text{
+                    font-size: 12px;
+                    min-width: 130px;
+                    padding: 0;
+                    font-size: 9px;
+                    justify-content: space-around;
+                    .descriptionProduct{
+                        display: none;
+                    }
+                }
+                .price{
+                    font-size: 20px;
+                    min-width: 100px;
+                    padding: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    .cart {
+                        padding: 15px 25px !important;
+                        background-size: 25px;
+                        display: inline !important;
+                    }
+                    .button {
+                        font-size: 12px;
+                        padding: 5px 10px;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .containerCartProducts {
     display: flex;
+    @media (max-width: $medium){
+        .h3, h3 {
+            font-size: calc(1.1rem + .6vw);
+        }
+        .items{
+            padding: 0%;
+            .product{
+                .text{
+                    padding: 0.5rem;
+                    min-width: 130px;
+                    justify-content: center;
+                    .titleProduct{
+                        margin-left: 2%;
+                    }
+                    .descriptionProduct{
+                        display: none;
+                    }
+                }
+                .inputNumbers {
+                    display: none;
+                }
+                .finalPrice{
+                    padding: 0;
+                    font-size: 18px;
+                }
+                .img {
+                    align-items: center;
+                    img{
+                    width: 90px;
+                    height: 90px;
+                    padding: 5px;
+                    transition: none;
+                }
+                }
+                .trash{
+                    padding: 0 2%;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .containerInformation {
+
     display: flex;
     width: 100%;
     justify-content: center;
@@ -112,6 +278,19 @@
         }
         .cartImg {
             @include tamañoImagen(30px,30px);
+        }
+    }
+    @media(max-width: $medium){
+        flex-direction: column;
+    }
+
+}
+
+.location{
+    @media (max-width: $medium) {
+        iframe{
+            width: 285px ;
+            height: 250px;
         }
     }
 }
@@ -145,4 +324,37 @@
 .titleCart {
     text-align: center;
     padding: 2%;
+}
+
+.carouselContainer img{
+    @media (max-width:$medium){
+        height: 250px
+    }
+}
+
+.carouselMain, .carousel-item img{
+    @media (max-width: $small){
+        height: 100px;
+        }
+    @media (max-width: $medium){
+    height: 300px;
+    }
+}
+
+.categories label{
+    @media (max-width: $medium){
+    display: inline-flex;
+    width: 49%;
+    }
+}
+
+.perifericos{
+    @media (max-width: $medium){
+    display: block;
+    }
+}
+.marcas{
+    @media (max-width: $medium){
+    display: block;
+    }
 }
