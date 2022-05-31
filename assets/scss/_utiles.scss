@@ -42,6 +42,7 @@ li {
     padding: map-get($botonMediaBig, padding );
     background-color: #e7e7e7;
     border: none;
+    font-family: 'Titles';
     font-size: map-get($botonMediaBig, font-size);
     margin: map-get($botonMediaBig, margin );
     cursor: pointer;
