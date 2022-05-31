@@ -46,3 +46,28 @@
     height: 300px;
     }
 }
+
+.producto{
+    .carousel-indicators{
+    justify-content: space-evenly;
+        [data-bs-target]{
+            background-size: 5rem; 
+            padding: 3rem; 
+            background-repeat: no-repeat;
+            background-color: transparent;
+            @media (max-width: $medium){
+                background-size: 3rem; 
+                padding: 1.5rem; 
+            }
+        }
+    }
+    .carousel-item{
+        img{
+        height: 450px;
+        @media (max-width:$medium) {
+            height: 300px;
+        }
+        }
+
+    }
+}

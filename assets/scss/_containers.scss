@@ -1,7 +1,10 @@
 .topSellerContainer{
     width: 100%;
-    padding: 2% 0 5% 0;
+    padding: 2% 0 2% 0;
     display: block;
+    h2{
+        @include font("nunito",true);
+    }
     @media (max-width: $medium) {
         h2 {
             text-align: center;
@@ -74,13 +77,13 @@
     @include font("Titles",false);
     width: 100%;
     text-align: center;
-    padding: 2% 25%;
+    padding: 2% 20%;
     flex-direction: column;
     justify-content: center;
 
     @media (max-width:$medium) {
         width: 100%;
-        padding: 0 10%;
+        padding: 5% 10%;
     }
 }
 
@@ -122,7 +125,7 @@
     }
     textarea {
         resize: none;
-        border: 1px solid black;
+        border: 1px solid #ccc;
         padding: .5rem;
     }
 
@@ -139,9 +142,11 @@
 
 .containerProducts {
 
-
     display: flex;
     padding: 2rem;
+    a:hover{
+        color: black !important;
+    }
     .containerFilter {
 
         @media(max-width: $small)
@@ -149,10 +154,24 @@
             width: 100%;
             margin-bottom: 10%;
         }
+        .ad{
+            @media (max-width: $medium){
+                display: none;
+            }
+        }
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 25%;
+    }
+
+    @media (max-width: $small){
+        .descriptionProduct{
+            max-height: 50px !important;
+            h2{
+                font-size: 14px !important;
+            }
+        }
     }
 
     @media (max-width: $medium){
@@ -165,9 +184,12 @@
         .items{
             padding: 0;
             .product{
+                border-bottom: thin solid #ddd;
+                padding: 5% 0;
                 .img{
                     display: flex;
                     align-items: center;
+                    border-right: none;
                     img{
                         width: 90px;
                         height: 90px;
@@ -181,8 +203,15 @@
                     padding: 0;
                     font-size: 9px;
                     justify-content: space-around;
+                    .titleProduct{
+                        margin-bottom: 0;
+                    }
                     .descriptionProduct{
-                        display: none;
+                        overflow: hidden;
+                        max-height: 65px;
+                        h2{
+                            font-size: 18px;
+                        }
                     }
                 }
                 .price{
@@ -192,6 +221,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content:center;
+                    border-left: none;
                     .cart {
                         padding: 15px 25px !important;
                         background-size: 25px;
@@ -321,6 +351,74 @@
     }
 }
 
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.producto{
+    display: flex;
+    justify-content: center;
+    padding: 4% 0;
+    border-bottom: solid #ddd;
+    @media (max-width:$medium) {
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel{
+        @media (max-width:$medium) {
+            width: 100%;
+        }
+    }
+    .title{
+        @media (max-width: $medium) {
+            width: 100%;
+            text-align: center;
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            @media (max-width: $medium) {
+                text-align: left;
+                padding: 1%;
+            }
+            #price{
+                padding-right: 10%;
+                @media(max-width: $medium){
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+}
+
+.informationProduct{
+    @media(max-width: $medium){
+        flex-direction: column-reverse;
+    }
+    .subTitulo{
+        text-align: left;
+    }
+    .descripcionProducto{
+        @media(max-width: $medium){
+            width: 100%;
+        }
+    }
+    .caracteristicasProducto{
+        @media(max-width: $medium){
+            width: 100%;
+            border-bottom: solid #ddd;
+        }
+    }
+}
+
 .titleCart {
     text-align: center;
     padding: 2%;
@@ -356,5 +454,13 @@
 .marcas{
     @media (max-width: $medium){
     display: block;
+    }
+}
+
+.publicidadEnvio{
+    img{
+        @media (max-width: $large){
+            width: 145%;
+        }
     }
 }

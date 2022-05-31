@@ -82,7 +82,7 @@ li {
         }
     }
     display: inline-flex;
-    padding: 0 10%;
+    padding: 0 5%;
     flex-direction: column;
     width: 100%;
     .product {
@@ -97,6 +97,7 @@ li {
             border-right: thin solid #ddd;
             display: flex;
             justify-content: center;
+            align-items: center;
             img {
                 width: 200px;
                 height: 200px;
@@ -125,10 +126,11 @@ li {
                 overflow: hidden;
                 font-size: 9px;
                 width: 100%;
-                height: 100%;
+                height: 10.5rem;
                 display: flex;
                 h2 {
                     @include font("nunito",false);
+                    font-size: calc(0.6rem + .9vw);
                 }
             }
             .price {
@@ -168,4 +170,8 @@ li {
     @media (min-width: $medium) AND (max-width: $large) {
     width: 100%;
     }
+}
+
+main{
+    background-color: #dddddd35
 }

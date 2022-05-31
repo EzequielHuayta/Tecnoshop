@@ -1,0 +1,27 @@
+@media (min-width: $medium){
+    .containerProducts{
+        .collapse {
+            &:not(.show) {
+            display: block;
+            }
+        }
+        .filtrosProductos{
+            display: none;
+        }
+    }
+
+
+
+
+    .containerFilter{
+        width: 100% !important;
+        img{
+            width: 10rem;
+        }
+        @media (min-width: $large) {
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
