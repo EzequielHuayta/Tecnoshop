@@ -52,18 +52,32 @@
     justify-content: space-evenly;
         [data-bs-target]{
             background-size: 5rem; 
-            padding: 3rem; 
+            padding: 2.5rem; 
             background-repeat: no-repeat;
             background-color: transparent;
+            @media (min-width:$medium) AND (max-width: $large){
+                background-size: 4rem;
+                padding: 2rem;
+            }
             @media (max-width: $medium){
+                background-size: 4.5rem; 
+                padding: 2.2rem; 
+            }
+
+            @media (max-width: $small){
                 background-size: 3rem; 
                 padding: 1.5rem; 
             }
+
+
         }
     }
     .carousel-item{
         img{
         height: 450px;
+        @media (min-width:$medium) AND (max-width: $large){
+            height: 400px;
+        }
         @media (max-width:$medium) {
             height: 300px;
         }

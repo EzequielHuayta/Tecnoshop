@@ -1348,12 +1348,26 @@ main {
 
 .producto .carousel-indicators [data-bs-target] {
   background-size: 5rem;
-  padding: 3rem;
+  padding: 2.5rem;
   background-repeat: no-repeat;
   background-color: transparent;
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  .producto .carousel-indicators [data-bs-target] {
+    background-size: 4rem;
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 767px) {
+  .producto .carousel-indicators [data-bs-target] {
+    background-size: 4.5rem;
+    padding: 2.2rem;
+  }
+}
+
+@media (max-width: 420px) {
   .producto .carousel-indicators [data-bs-target] {
     background-size: 3rem;
     padding: 1.5rem;
@@ -1362,6 +1376,12 @@ main {
 
 .producto .carousel-item img {
   height: 450px;
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .producto .carousel-item img {
+    height: 400px;
+  }
 }
 
 @media (max-width: 767px) {
