@@ -35,7 +35,7 @@ header{
       
     @media (max-width: $medium){
         input[type=search]{
-            display: none;
+            display: block;
         }
     }
 }
@@ -52,7 +52,12 @@ header{
 
     .buscador{
         @media (max-width: $medium) {
-            display: none;
+            display: flex;
+            width: 80%;
+        }
+        @media (max-width: $medium) {
+            display: flex;
+            width: 60%;
         }
         width: 60%;
         position: relative;
@@ -125,7 +130,7 @@ nav{
 .header-logo{
     display: flex;
     padding-left: 1%;
-
+    text-align: center;
     @media (max-width: $medium){
         flex-direction: column;
         width: 50%;

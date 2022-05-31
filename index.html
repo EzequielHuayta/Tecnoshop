@@ -16,45 +16,41 @@
 <body>
 
 <!--HEADER-->
-<div>
-    <header>
-        <div class="header-top">
-            <div class="header-logo"> 
-            <a href="index.html" > 
-                <h1>
-                    <img src="./assets/images/logo.jpg"> TECNOSHOP
-                </h1>  
-            </a>
-            </div>
-            <form class="buscador">
-              <input type="search" placeholder="Buscar productos, marcas" aria-label="Search" class="header-search">
-              <button>
-                  <i class="fa fa-search"></i>
-              </button>
-            </form>
-            <div class = header-images  >
-                <div class = "header-images">
-                <a href="./pages/login.html"><img src="./assets/images/icons/user-icon.jpg"></a>
-                </div>
-                <div class = "header-images">
-                <a href="./pages/cart.html"><img src="./assets/images/icons/shoppingcart-icon.jpg"></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="header-bottom">
-            <nav>
-                <ul>
-                    <li ><a href="./pages/ofertas.html" id=ofertas style="color: rgb(255, 217, 0) !important;"> OFERTAS!</a></li>
-                    <li><a href="./pages/productos.html" >Productos</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/ayuda.html">Ayuda</a></li>
-                </ul>   
-            </nav>
-        </div>
-
-    </header>
-</div>
+<header>
+  <div class="header-top">
+    <div class="header-logo"> 
+      <a href="index.html" > 
+        <h1>
+          <img src="./assets/images/logo.jpg"> TECNOSHOP
+        </h1>  
+      </a>
+    </div>
+    <form class="buscador">
+      <input type="search" placeholder="Buscar productos, marcas" aria-label="Search" class="header-search">
+      <button>
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+    <div class = header-images  >
+      <div class = "header-images">
+        <a href="./pages/login.html"><img src="./assets/images/icons/user-icon.jpg"></a>
+      </div>
+      <div class = "header-images">
+        <a href="./pages/cart.html"><img src="./assets/images/icons/shoppingcart-icon.jpg"></a>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <nav>
+      <ul>
+          <li ><a href="./pages/ofertas.html" id=ofertas style="color: rgb(255, 217, 0) !important;"> OFERTAS!</a></li>
+            <li><a href="./pages/productos.html" >Productos</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./pages/ayuda.html">Ayuda</a></li>
+        </ul>   
+    </nav>
+  </div>
+</header>
 <!--MAIN-->
 <main>
     <!--Primer carousel-->
@@ -82,19 +78,17 @@
       </div>
   </div>
     <div class="topSellerContainer" style="text-align:center;">
-
       <!--Los mas vendidos-->
         <h2 class="mb-4 mt-4">Los mas vendidos</h2>
       <div class="container">
-
-        <!--Primer Segundo-->
+        <!--Segundo carousel-->
         <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row row-cols-3 row-cols-md-3">
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class = "img-fluid" src="./assets/images/products/evga-rtx-3060-xc.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class = "img-fluid" src="./assets/images/products/evga-rtx-3060-xc.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$140000</h5>
                           <p class="card-text w-100">EVGA Geforce RTX 3060 XC</p>
@@ -105,10 +99,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class = "img-fluid" src="./assets/images/products/k1-usb.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class = "img-fluid" src="./assets/images/products/k1-usb.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$10000</h5>
                           <p class="card-text w-100">Teclado Gigabyte Aorus K1 USB</p>
@@ -120,7 +113,7 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/hyperx-mouse-pulsefire-gaming.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/hyperx-mouse-pulsefire-gaming.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$6699</h5>
                           <p class="card-text w-100">Mouse Hyperx Pulsefire RGB</p>
@@ -136,7 +129,7 @@
               <div class="row row-cols-3 row-cols-md-3">
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/logitech-mousepad-g240.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/logitech-mousepad-g240.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$5000</h5>
                           <p class="card-text w-100">Logitech mousepad g240</p>
@@ -148,7 +141,7 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/logitech-auriculares-pro-gaming.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/logitech-auriculares-pro-gaming.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$18000</h5>
                           <p class="card-text w-100">Auriculares Logitech G PRO</p>
@@ -160,7 +153,7 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/logitech-mouse-pro-gaming.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/logitech-mouse-pro-gaming.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$12999</h5>
                           <p class="card-text w-100">Mouse logitech superlight bluetooth</p>
@@ -184,22 +177,19 @@
         </div>
        </div>
     </div>
-
     <!--Procesadores-->
     <div class="topSellerContainer" style="text-align:center;">
-
       <!--Procesadores-->
         <h2 class="mb-4 mt-4">Procesadores</h2>
       <div class="container">
-
-        <!--Primer Segundo-->
+        <!--Tercer carousel-->
         <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row row-cols-3 row-cols-md-3">
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class = "img-fluid" src="./assets/images/products/intel-celeron.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class = "img-fluid" src="./assets/images/products/intel-celeron.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$14000</h5>
                           <p class="card-text w-100">Intel Celeron</p>
@@ -213,7 +203,7 @@
 
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class = "img-fluid" src="./assets/images/products/core-i7.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class = "img-fluid" src="./assets/images/products/core-i7.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$50000</h5>
                           <p class="card-text w-100">Intel Core i7 8va generacion</p>
@@ -225,7 +215,7 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/core-i9.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/core-i9.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$70000</h5>
                           <p class="card-text w-100">Intel Core i9 9va generacion</p>
@@ -241,7 +231,7 @@
               <div class="row row-cols-3 row-cols-md-3">
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/intel-pentium.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/intel-pentium.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$9000</h5>
                           <p class="card-text w-100">Intel Pentium Gold</p>
@@ -253,7 +243,7 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/core-i3.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/core-i3.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$20000</h5>
                           <p class="card-text w-100">Intel Core i3 9va generacion</p>
@@ -265,7 +255,7 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/amd-ryzen-5700.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/amd-ryzen-5700.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$63125</h5>
                           <p class="card-text w-100">AMD Ryzen 5700G</p>
@@ -289,26 +279,23 @@
         </div>
       </div>
     </div>
-<!--Publicidad envio gratis-->
+    <!--Publicidad envio gratis-->
     <div class="publicidadEnvio container d-flex justify-content-center">
       <img src="./assets/images/publicity/envios.jpg"/> 
     </div>
-
     <!--Lo mejor para streaming-->
     <div class="topSellerContainer" style="text-align:center;">
-
       <!--Lo mejor para streaming-->
         <h2 class="mb-4 mt-4">Lo mejor para streaming</h2>
       <div class="container">
-
-        <!--Primer Segundo-->
+        <!--Cuarto carousel-->
         <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row row-cols-3 row-cols-md-3">
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class = "img-fluid" src="./assets/images/products/hyperx-quadcast.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class = "img-fluid" src="./assets/images/products/hyperx-quadcast.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$22999</h5>
                           <p class="card-text w-100">HyperX quadcast microfono streaming</p>
@@ -319,10 +306,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class = "img-fluid" src="./assets/images/products/logitech-streamcam.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class = "img-fluid" src="./assets/images/products/logitech-streamcam.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$25000</h5>
                           <p class="card-text w-100">Logitech Streamcam 60FPS Full Hd</p>
@@ -334,7 +320,7 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/core-i9.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/core-i9.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                           <h5 class="card-title">$70000</h5>
                           <p class="card-text w-100">Intel Core i9 9va generacion</p>
@@ -350,10 +336,10 @@
               <div class="row row-cols-3 row-cols-md-3">
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/intel-pentium.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/silla-corsair-t1.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                          <h5 class="card-title">$9000</h5>
-                          <p class="card-text w-100">Intel Pentium Gold</p>
+                          <h5 class="card-title">$68000</h5>
+                          <p class="card-text w-100">Silla corsair T1</p>
                         </div>
                         <div class="card-footer">
                           <a href="#" class="btn btn-success mt-2">Añadir al carrito</a>
@@ -362,10 +348,10 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/core-i3.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/evga-rtx-3060-xc.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                          <h5 class="card-title">$20000</h5>
-                          <p class="card-text w-100">Intel Core i3 9va generacion</p>
+                          <h5 class="card-title">$140000</h5>
+                          <p class="card-text w-100">EVGA Geforce RTX 3060 XC</p>
                         </div>
                         <div class="card-footer">
                           <a href="#" class="btn btn-success mt-2">Añadir al carrito</a>
@@ -374,10 +360,10 @@
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <div class="card" style="width: 20rem; align-items: center;">
-                        <img class ="img-fluid" src="./assets/images/products/amd-ryzen-5700.jpg" class="card-img-top" alt="...">
+                        <a href="./pages/producto.html"><img class ="img-fluid" src="./assets/images/products/samsung-22-led.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                          <h5 class="card-title">$63125</h5>
-                          <p class="card-text w-100">AMD Ryzen 5700G</p>
+                          <h5 class="card-title">$35999</h5>
+                          <p class="card-text w-100">Samsung monitor led 75 HZ</p>
                         </div>
                         <div class="card-footer">
                           <a href="#" class="btn btn-success mt-2">Añadir al carrito</a>
@@ -399,62 +385,57 @@
       </div>
     </div>
 </main>
-
 <!--FOOTER-->
 <footer>
-    <div class="content" style="text-align: left;">
-        <div class="footerColumn">
-            <h4>INFORMACION</h4>
-            <ul class ="informacion-vertical">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/contacto.html">Contactanos!</a></li>
-                <li><a href="./pages/ayuda.html">Necesito Ayuda</a></li>
-            </ul>
-        </div>
-        <div class="footerColumn">
-            <h4>DONDE ESTAMOS?</h4>
-            <p>El Salvador 5218 Soho, CABA.
-                <a href="tel:(011)1111-2395"><p>(011)1111-1111</p></a>
-                <p>Lunes a Viernes de 08 a 22hs </p>
-                <p>Sabados y Domingos de 12 a 18hs</p>
-                <a href="mailto:ejemplo@paginacoder.com.ar"> ejemplo@paginacoder.com.ar</a>
-                <ul>
-                    <li><img src="./assets/images/icons/visa-icon.png" ><img src="./assets/images/icons/mastercard-icon.png" ><img src="./assets/images/icons/cash-icon.png" ></li>
-                </ul>
-            </p>
-        </div>
-        <div class="footerColumn">
-            <h4>TECNOSHOP</h4>
-            <p>EN LAS REDES</p>
-            <ul>
-                <li><a href="https://www.facebook.com/"> <img src="./assets/images/social/facebook.jpg" ></a><a href="https://www.instagram.com/"><img src="./assets/images/social/instagram.jpg" ></a></li>
-            </ul>
-        </div>    
-        <div class="footerColumn" style="border-bottom: none;">
-            <h4>NEWSLETTER</h4>
-                <form id = footerForm>
-                    <h5>Recibi las ultimas noticias en tu mail!</h5>
-                        <div class="">
-                        <label>Nombre:</label>
-                        </div>
-                        <div>
-                        <input type="text" id="nombre" name="nombre">
-                        </div>
-
-                        <div>
-                        <label>Email:</label>
-                        </div>
-                        <div>
-                        <input type="email" id="email" name="email">
-                        </div>                    
-
-                    <input class="mt-2 mb-2 btn btn-secondary" type="submit" value="Suscribirse"> 
-                </form>
-        </div>
+  <div class="content" style="text-align: left;">
+    <div class="footerColumn">
+      <h4>INFORMACION</h4>
+      <ul class ="informacion-vertical">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="./pages/contacto.html">Contactanos!</a></li>
+        <li><a href="./pages/ayuda.html">Necesito Ayuda</a></li>
+      </ul>
     </div>
+    <div class="footerColumn">
+      <h4>DONDE ESTAMOS?</h4>
+      <p>El Salvador 5218 Soho, CABA.
+          <a href="tel:(011)1111-2395"><p>(011)1111-1111</p></a>
+        <p>Lunes a Viernes de 08 a 22hs </p>
+        <p>Sabados y Domingos de 12 a 18hs</p>
+        <a href="mailto:ejemplo@paginacoder.com.ar"> ejemplo@paginacoder.com.ar</a>
+        <ul>
+          <li><img src="./assets/images/icons/visa-icon.png" ><img src="./assets/images/icons/mastercard-icon.png" ><img src="./assets/images/icons/cash-icon.png" ></li>
+        </ul>
+      </p>
+    </div>
+    <div class="footerColumn">
+      <h4>TECNOSHOP</h4>
+      <p>EN LAS REDES</p>
+      <ul>
+        <li><a href="https://www.facebook.com/"> <img src="./assets/images/social/facebook.jpg" ></a><a href="https://www.instagram.com/"><img src="./assets/images/social/instagram.jpg" ></a></li>
+      </ul>
+    </div>    
+    <div class="footerColumn" style="border-bottom: none;">
+      <h4>NEWSLETTER</h4>
+      <form id = footerForm>
+        <h5>Recibi las ultimas noticias en tu mail!</h5>
+        <div class="">
+          <label>Nombre:</label>
+        </div>
+        <div>
+          <input type="text" id="nombre" name="nombre">
+        </div>
+        <div>
+          <label>Email:</label>
+        </div>
+        <div>
+          <input type="email" id="email" name="email">
+        </div>                    
+        <input class="mt-2 mb-2 btn btn-secondary" type="submit" value="Suscribirse"> 
+      </form>
+    </div>
+  </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 </body>
-
 </html>

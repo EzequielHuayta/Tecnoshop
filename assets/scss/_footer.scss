@@ -1,7 +1,7 @@
 footer {
     background-color: $footer-color;
     color: white;
-    @media (max-width: $small){
+    @media (max-width: $medium){
         input[type=submit] {
             margin-top: 2px;
             padding:1px 3px; 
@@ -64,12 +64,13 @@ footer {
                 padding: 0 3px;  
             }
             @media (max-width: $medium){
+                padding: 1%;
                 width: 100%;
                 border-bottom: thin solid white;
             }
 
             @media (min-width: $medium) AND (max-width: $large){
-                width: 30%;
+                width: 100%;
                 padding: 0 1%;
             }
             li{
@@ -118,7 +119,7 @@ footer {
                 }
                 @media (max-width: $medium){
                     padding: 1% 0;
-                    font-size: 14px;
+                    font-size: 16px;
                     img{
                         width: 40px;
                         height: 40px;

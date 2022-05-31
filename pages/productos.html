@@ -14,45 +14,41 @@
 </head>
 <body>
 <!--HEADER-->
-<div>
-    <header>
-        <div class="header-top">
-            <div class="header-logo"> 
+<header>
+    <div class="header-top">
+        <div class="header-logo"> 
             <a href="../index.html" > 
                 <h1>
                     <img src="../assets/images/logo.jpg"> TECNOSHOP
                 </h1>  
             </a>
+        </div>
+        <form class="buscador">
+            <input type="search" placeholder="Buscar productos, marcas" aria-label="Search" class="header-search">
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+        <div class = header-images  >
+            <div class = "header-images">
+                <a href="./login.html"><img src="../assets/images/icons/user-icon.jpg"></a>
             </div>
-            <form class="buscador">
-                <input type="search" placeholder="Buscar productos, marcas" aria-label="Search" class="header-search">
-                <button>
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
-            <div class = header-images  >
-                <div class = "header-images">
-                    <a href="login.html"><img src="../assets/images/icons/user-icon.jpg"></a>
-                </div>
-                <div class = "header-images">
-                    <a href="cart.html"><img src="../assets/images/icons/shoppingcart-icon.jpg"></a>
-                </div>
+            <div class = "header-images">
+                <a href="./cart.html"><img src="../assets/images/icons/shoppingcart-icon.jpg"></a>
             </div>
         </div>
-
-        <div class="header-bottom">
-            <nav>
-                <ul>
-                    <li ><a href="ofertas.html" style="color: rgb(255, 217, 0) !important;"> OFERTAS!</a></li>
-                    <li><a href="productos.html" >Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="ayuda.html">Ayuda</a></li>
-                </ul>   
-            </nav>
-        </div>
-
-    </header>
-</div>
+    </div>
+    <div class="header-bottom">
+        <nav>
+            <ul>
+                <li ><a href="./ofertas.html" style="color: rgb(255, 217, 0) !important;"> OFERTAS!</a></li>
+                <li><a href="./productos.html" >Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+            </ul>   
+        </nav>
+    </div>
+</header>
 <!--MAIN-->
 <main class="products">
     <div class="containerProducts">
@@ -120,7 +116,6 @@
                                 </label>
                             </div>
                         </li>
-
                     </ul>
                 </div>
                 <div class="container mt-5 ad" style="min-width: 160px;">
@@ -131,11 +126,11 @@
         <ol class="items">
             <li class="product">
                         <div class="img">
-                        <a href="producto.html"> <img src="../assets/images/products/logitech-mouse-pro-gaming.jpg" alt="products-1"> </a>
+                        <a href="./producto.html"> <img src="../assets/images/products/logitech-mouse-pro-gaming.jpg" alt="products-1"> </a>
                         </div>
                         <div class="text">
                             <div class="titleProduct">
-                            <a href="producto.html">
+                            <a href="./producto.html">
                             <h2>Mouse logitech superlight</h2>
                             </a>
                             </div>
@@ -152,11 +147,11 @@
             </li>
             <li class="product">
                 <div class="img">
-                <a href="producto.html"> <img src="../assets/images/products/core-i9.jpg" alt="products-2"> </a>
+                <a href="./producto.html"> <img src="../assets/images/products/core-i9.jpg" alt="products-2"> </a>
                 </div>
                 <div class="text">
                     <div class="titleProduct">
-                    <a href="producto.html">
+                    <a href="./producto.html">
                     <h2>Intel core I9 Unlocked</h2>
                     </a>
                     </div>
@@ -172,11 +167,11 @@
             </li>      
             <li class="product">
                 <div class="img">
-                <a href="producto.html"> <img src="../assets/images/products/logitech-auriculares-pro-gaming.jpg" alt="products-3"> </a>
+                <a href="./producto.html"> <img src="../assets/images/products/logitech-auriculares-pro-gaming.jpg" alt="products-3"> </a>
                 </div>
                 <div class="text">
                     <div class="titleProduct"> 
-                    <a href="producto.html">
+                    <a href="./producto.html">
                     <h2>Auriculares Logitech G PRO</h2>
                     </a>
                     </div>
@@ -192,11 +187,11 @@
             </li>
             <li class="product">
                 <div class="img">
-                <a href="producto.html"> <img src="../assets/images/products/evga-rtx-3060-xc.jpg" alt="products-4"> </a>
+                <a href="./producto.html"> <img src="../assets/images/products/evga-rtx-3060-xc.jpg" alt="products-4"> </a>
                 </div>
                 <div class="text">
                     <div class="titleProduct">
-                    <a href="producto.html">
+                    <a href="./producto.html">
                     <h2>EVGA Geforce RTX 3060 XC</h2>
                     </a>
                     </div>
@@ -212,11 +207,11 @@
             </li>
             <li class="product">
                 <div class="img">
-                <a href="producto.html"> <img src="../assets/images/products/steelseries-mousepad-gaming.jpg" alt="products-5"> </a>
+                <a href="./producto.html"> <img src="../assets/images/products/steelseries-mousepad-gaming.jpg" alt="products-5"> </a>
                 </div>
                 <div class="text">
                     <div class="titleProduct">
-                    <a href="producto.html"> 
+                    <a href="./producto.html"> 
                     <h2>Mousepad Steelseries Gaming</h2>
                     </a>
                     </div>
@@ -230,10 +225,7 @@
                     <button class="button">Mas info </button>
                 </div>
             </li>
-
-            </div>
         </ol>
-
     </div>
 </main>
 <!--FOOTER-->
