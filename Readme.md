@@ -1,3 +1,5 @@
+#Ezequiel Huayta Romay (Hecho para CODERHOUSE HTML-CSS)
+
 Agregue keywords y descriptions en todos los htmls incluyendo principalmente:
 keywords:
 - Tecnoshop
